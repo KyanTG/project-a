@@ -11,6 +11,7 @@ import { HeaderComponent } from './components/header/header';
     <app-header />
     <app-home />
   `,
+  
 })
 export class App {
   title = 'first-app';
