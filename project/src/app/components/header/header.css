@@ -1,0 +1,15 @@
+header {
+    display: flex;
+    justify-content: center;
+    background-color: darkblue;
+    height: 20em;
+    width: 40em;
+    border-radius: 25px;
+    padding: 2em;
+    margin-top: 2em;
+}
+
+h1 {
+    height: fit-content;
+    color: whitesmoke;
+}
