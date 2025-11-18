@@ -2,18 +2,66 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     background-color: whitesmoke;
     width: 20em;
     height: 20em;
-    border: 0.5em solid darkblue;
     border-radius: 7.5em;
     corner-shape: scoop;
-    margin-top: 10em;
+    transition: color 0.25s;
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        box-sizing: border-box; 
+        border: 10px solid transparent;
+        border-radius: inherit;
+        corner-shape: inherit;
+        width: 0;
+        height: 0;
+    }
+
+    &::before {
+        top: 0;
+        left: 0;
+    }
+
+    &::after {
+        bottom: 0;
+        right: 0;
+    }
+
+    &:hover {
+        color: darkblue;
+    }
+
+    &:hover::before,
+    &:hover::after {
+        width: 100%;
+        height: 100%;
+    }
+
+    &:hover::before {
+        border-top-color: darkblue;
+        border-right-color: darkblue;
+        transition:
+            width 0.25s ease-out,
+            height 0.25s ease-out 0.25s;
+    }
+
+    &:hover::after {
+        border-bottom-color: darkblue;
+        border-left-color: darkblue;
+        transition:
+            width 0.25s ease-out 0.5s,
+            height 0.25s ease-out 0.75s;
+    }
+
 
     @media ( min-width: 500px ) {
         width: 40em;
         height: 40em;
-        border: 1em solid darkblue;
         border-radius: 15em;
     }
 }
