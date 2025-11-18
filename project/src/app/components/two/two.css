@@ -1,0 +1,33 @@
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15em;
+    height: 15em;
+    background-color: honeydew;
+    border-radius: 5em;
+    corner-left-shape: notch;
+    corner-right-shape: bevel;
+    outline: 0.5em solid darkblue;
+    outline-offset: 1em;
+    margin-top: 10em;
+
+    @media ( min-width: 500px ) {
+        width: 30em;
+        height: 30em;
+        border-radius: 10em;
+        outline: 1em solid darkblue;
+        outline-offset: 2em; 
+    }
+}
+
+h2 {
+    font-family: monospace;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: darkblue;
+
+    @media ( min-width: 500px ) {
+        font-size: 2em
+    }
+}

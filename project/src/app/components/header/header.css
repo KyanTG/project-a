@@ -1,15 +1,31 @@
 header {
     display: flex;
     justify-content: center;
-    background-color: darkblue;
+    align-items: center;
+    background-color: whitesmoke;
+    width: 20em;
     height: 20em;
-    width: 40em;
-    border-radius: 25px;
-    padding: 2em;
-    margin-top: 2em;
+    border: 0.5em solid darkblue;
+    border-radius: 7.5em;
+    corner-shape: scoop;
+    margin-top: 10em;
+
+    @media ( min-width: 500px ) {
+        width: 40em;
+        height: 40em;
+        border: 1em solid darkblue;
+        border-radius: 15em;
+    }
 }
 
 h1 {
+    font-family: monospace;
+    font-size: 1em;
+    text-transform: uppercase;
     height: fit-content;
-    color: whitesmoke;
+    color: darkblue;
+
+    @media ( min-width: 500px ) {
+        font-size: 2em;
+    }
 }
