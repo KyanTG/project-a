@@ -11,7 +11,7 @@ article {
     height: 15em;
     background-color: lightskyblue;
     border-radius: 5em;
-    corner-shape: bevel;
+    corner-shape: scoop;
     outline: 0.5em solid darkblue;
     outline-offset: 0.5em;
     margin-top: 100em;
