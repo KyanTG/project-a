@@ -16,7 +16,7 @@ article {
     outline: 0.5em solid darkblue;
     outline-offset: 1em;
     margin-top: 100em;
-    animation: slideIn 0.5s ease;
+    animation: slideInLeft 0.5s ease;
     animation-timeline: view();
     animation-range: entry cover 80%;
 
@@ -40,7 +40,7 @@ h2 {
     }
 }
 
-@keyframes slideIn {
+@keyframes slideInLeft {
     from {
         opacity: 0;
         transform: translateX(-300px);
