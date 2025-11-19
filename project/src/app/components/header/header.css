@@ -9,8 +9,7 @@ header {
     height: 20em;
     transition: color 0.25s;
 
-    &::before,
-    &::after {
+    &::before, &::after {
         content: '';
         position: absolute;
         box-sizing: border-box; 
@@ -27,6 +26,8 @@ header {
     &::after {
         bottom: 0;
         right: 0;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
     }
 
     &:hover {
@@ -41,15 +42,13 @@ header {
     &:hover::before {
         border-top-color: lightblue;
         border-right-color: lightblue;
-        transition:
-            width 0.25s ease-out,
-            height 0.25s ease-out 0.25s;
+        transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
     }
 
     &:hover::after {
+        transition: width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s, border-color 0s linear 0.5s; 
         border-bottom-color: lightblue;
         border-left-color: lightblue;
-        transition: width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
     }
 
 
@@ -70,3 +69,4 @@ h1 {
         font-size: 2em;
     }
 }
+

@@ -10,6 +10,7 @@ body {
     display: flex;
     justify-content: center;
     background-color: rgb(0, 0, 52);
-    padding-block: 10em;
-    
+    padding-top:20em;
+    padding-bottom: 30em;
 }
+
